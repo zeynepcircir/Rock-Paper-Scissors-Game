@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      class="page"
+    />
+    <title>Rock Paper Scissors</title>
+    
+    <link rel="stylesheet" href="game.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg" />
+  </head>
+
+  <body style="background-color: lightcoral">
+    <section class="game">
+    
+      <center>
+        <h1 style="color: lightcyan" class="title">ROCK PAPER SCISSORS</h1>
+        <div >
+          <button style="background-color: lightblue" id="startButton">
+            START
+          </button>
+
+          <button style="background-color: lightblue" id="resetButton" id="reset">
+            RESET
+          </button>
+        
+      </center>
+    </div>
+
+    <center>
+      <div class="parent">
+        <div class="flip-card p-count playerScore">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p id="playerCount"  class="p-count count">0</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Player!</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card c-count computerScore">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p id="computerCount" class="p-count count">0</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Computer!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  
+
+    <div class="row choice">
+      <center>
+        <div class="column" >
+          <button id="scissors">
+            <img src="./img/scissors.png" style="border-radius: 50%;" alt=""> 
+          </button>  
+        </div>
+        <div class="column">
+           <button id="paper">
+            <img src="./img/paper.png" style="border-radius: 50%;" alt="">
+           </button>
+        </div>
+        <div class="column">
+           <button id="rock">
+            <img src="./img/rox.png" style="border-radius: 50%;" alt="">
+           </button>
+        </div>
+      </center>
+    </div>
+
+    <div>
+      <center>
+        <h3 style="color: lavender">|The Winning Streaming Screen|</h3>
+      </center>
+    </div>
+    
+    <center>
+    <h2 id="scoreTable">Score Table</h2>
+    </center>  
+    
+</section>
+    <script src="text.js"></script>
+  </body>
+</html>
+
